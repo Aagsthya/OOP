@@ -19,14 +19,16 @@ class test
          {
           cout << "count:"<< count << "\n";
          }
+};
 int test :: count; 
+
 int main()
 {
    test t1, t2;
    tl.setcode();
    t2.setcode();
    test::showcount();
-   test t3,
+   test t3;
    t3.setcode();
    test::showcount();
    t1.showcode();
