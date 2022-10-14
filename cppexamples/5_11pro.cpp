@@ -20,14 +20,16 @@ class matrix
          int i,j;
          for(i=0;i<3;i++)
          {
-           cout<<"\n;
+           cout<<"\n";
            for(j=0;j<3;j++)
            {
              cout<<m[i][j]<<"\t";
            }
          }
        }
-  friend matrix trans(matrix m1)
+  friend matrix trans(matrix m1);
+};
+matrix trans(matrix m1)
   {
     matrix m2;
     int i,j;
@@ -40,9 +42,9 @@ class matrix
   {
    matrix mat1,mat2;
     mat1.read();
-    cout<<\n You entered the following matrix:";
+    cout<<"\n You entered the following matrix:";
       mat1.display();
-    mat2.trans(mat1);
+    mat2=trans(mat1);
     cout<<"\nTransposed matrix: ";
     mat2.display();
     return 0;
