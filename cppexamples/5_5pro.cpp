@@ -9,7 +9,7 @@ class test
      public:
         void setcode (void)
         {
-        code ++count;
+        code = ++count;
         }
         void showcode (void)
         { 
